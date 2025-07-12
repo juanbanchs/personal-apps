@@ -360,7 +360,7 @@
     .control-panel {
         padding: 0 20px;
         height: 100px;
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
 
     .text-container {
