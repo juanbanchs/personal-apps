@@ -150,6 +150,7 @@
     gap: 20px;
     z-index: 100;
     animation: slideUp 0.2s ease;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .language-column {
@@ -350,9 +351,16 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .app {
+        height: 100vh;
+        height: 100dvh;
+        /* Use dynamic viewport height on mobile */
+    }
+
     .control-panel {
         padding: 0 20px;
-        height: 120px;
+        height: 100px;
+        margin-bottom: 100px;
     }
 
     .text-container {
@@ -367,13 +375,26 @@
         font-size: 30px;
     }
 
+    .language-section {
+        justify-content: flex-start;
+        margin-left: 0;
+        /* ensure no extra margin */
+    }
+
+    .language-button {
+        padding: 6px 10px;
+        font-size: 11px;
+        min-width: 0;
+        max-width: 160px;
+    }
+
     .language-dropdown {
-        left: 50%;
+        left: 100%;
         transform: translateX(-50%);
     }
 
     .color-palette {
-        right: 50%;
+        right: 110%;
         transform: translateX(50%);
     }
 }
